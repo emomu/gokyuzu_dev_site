@@ -55,8 +55,8 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - resimler/logo.png
-    - resimler/logo2.jpg
+    - assets/images/logo.png
+    - assets/images/logo2.jpg
 
 
   # The following line ensures that the Material Icons font is
@@ -82,7 +82,7 @@ flutter:
   fonts:
     - family: Gentium
       fonts:
-        - asset: fonts/Gentium.ttf
+        - asset: assets/fonts/Gentium.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

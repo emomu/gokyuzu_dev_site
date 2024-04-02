@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gokyuzudevsite/komponent/drawer.dart';
+import 'package:gokyuzudevsite/components/drawer.dart';
+
 void main() {
   runApp(const MyApp());
 }

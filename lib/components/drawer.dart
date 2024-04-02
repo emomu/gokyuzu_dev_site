@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gokyuzudevsite/sayfalar/anasayfa.dart';
-import 'package:gokyuzudevsite/sayfalar/makalelerimiz.dart';
+import 'package:gokyuzudevsite/pages/anasayfa.dart';
+import 'package:gokyuzudevsite/pages/makalelerimiz.dart';
 import 'dart:html' as html;
 
 class MyHomePage extends StatefulWidget {
@@ -35,9 +35,9 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         title: GestureDetector(
           onTap: (){
-            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Anasayfa()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MyHomePage(title: "Gokyuzu Development")));
           },
-            child: Image.asset("resimler/logo2.jpg",width: 300,))
+            child: Image.asset("assets/images/logo2.jpg",width: 300,))
       ) : null,
       body: Center(
         child: _widgetOptions[_selectedIndex],

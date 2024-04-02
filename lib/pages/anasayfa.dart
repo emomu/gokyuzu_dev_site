@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gokyuzudevsite/sayfalar/anasayfa%20responsive%201800.dart';
-import 'package:gokyuzudevsite/sayfalar/anasayfa%20responsive%20600.dart';
-import 'package:gokyuzudevsite/sayfalar/makalelerimiz.dart';
+import 'package:gokyuzudevsite/components/drawer.dart';
+import 'package:gokyuzudevsite/pages/anasayfa%20responsive%201800.dart';
+import 'package:gokyuzudevsite/pages/anasayfa%20responsive%20600.dart';
+import 'package:gokyuzudevsite/pages/makalelerimiz.dart';
 class Anasayfa extends StatefulWidget {
   const Anasayfa({super.key});
 
@@ -20,9 +21,9 @@ class _AnasayfaState extends State<Anasayfa> {
         backgroundColor: Colors.black,
         title: GestureDetector(
             onTap: (){
-              Navigator.pushReplacement((context), MaterialPageRoute(builder: (context) => const Anasayfa()));
+              Navigator.pushReplacement((context), MaterialPageRoute(builder: (context) => const MyHomePage(title: "Gokyuzu Development")));
             },
-            child: Image.asset("resimler/logo2.jpg",width: 300,)),
+            child: Image.asset("assets/images/logo2.jpg",width: 300,)),
         centerTitle: false,
         leading: const Text(" "),
         actions: [
@@ -32,7 +33,7 @@ class _AnasayfaState extends State<Anasayfa> {
                   backgroundColor: Colors.black
               ),
               onPressed: (){
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Anasayfa()));
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MyHomePage(title: "Gokyuzu Development")));
               }, child: const Text("Uygulamalarımız",style: TextStyle(fontFamily:"Gentium",fontSize:16))),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
