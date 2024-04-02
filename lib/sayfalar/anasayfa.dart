@@ -32,7 +32,7 @@ class _AnasayfaState extends State<Anasayfa> {
                   backgroundColor: Colors.black
               ),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const Anasayfa()));
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Anasayfa()));
               }, child: const Text("Uygulamalarımız",style: TextStyle(fontFamily:"Gentium",fontSize:16))),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
