@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Gokyuzu Development',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFFF0000)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFF0000)),
         useMaterial3: false,
       ),
-      home: MyHomePage(title: "Gokyuzu Development"),
+      home:const MyHomePage(title: "Gokyuzu Development"),
     );
   }
 }

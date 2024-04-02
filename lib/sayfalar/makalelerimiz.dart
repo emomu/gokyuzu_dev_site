@@ -54,7 +54,7 @@ class _MakalelerimizState extends State<Makalelerimiz> {
         backgroundColor: Colors.black,
         title: GestureDetector(
             onTap: (){
-              Navigator.pushReplacement((context), MaterialPageRoute(builder: (context) => Anasayfa()));
+              Navigator.pushReplacement((context), MaterialPageRoute(builder: (context) => const Anasayfa()));
             },
             child: Image.asset("resimler/logo2.jpg",width: 300,)),
         centerTitle: false,
@@ -66,15 +66,15 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                   backgroundColor: Colors.black
               ),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Anasayfa()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const Anasayfa()));
               }, child: const Text("Uygulamalarımız",style: TextStyle(fontFamily:"Gentium",fontSize:16))),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                fixedSize: Size(150,10),
+                fixedSize: const Size(150,10),
               ),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Makalelerimiz()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const Makalelerimiz()));
               }, child: const Text("Makalelerimiz",style: TextStyle(fontFamily:"Gentium",fontSize:16)))
         ],
 
@@ -83,7 +83,7 @@ class _MakalelerimizState extends State<Makalelerimiz> {
         future: makaleleriYukle(),
         builder: (context,snapshot){
           if(snapshot.connectionState == ConnectionState.waiting){
-            return CircularProgressIndicator();
+            return const CircularProgressIndicator();
           } else if(snapshot.hasData){
             var makalelerListesi = snapshot.data;
             return ListView.builder(
@@ -101,7 +101,7 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                           color: Colors.black,
                           // Define the shape of the card
                           shape: RoundedRectangleBorder(
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.white,
                                 width: 1.0
                             ),
@@ -127,8 +127,8 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                                           Container(height: 5),
                                           // Add a title widget
                                           Text(
-                                            "${makale.makale_ismi}",
-                                            style: TextStyle(
+                                            makale.makale_ismi,
+                                            style: const TextStyle(
                                               color: Colors.white,fontWeight: FontWeight.w300,
                                               fontFamily: "Gentium",fontSize: 22
                                             ),
@@ -137,7 +137,7 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                                           Container(height: 5),
                                           // Add a subtitle widget
                                           Text(
-                                            "${makale.makale_aciklama}",
+                                            makale.makale_aciklama,
                                             style: TextStyle(
                                               color: Colors.grey[500],fontFamily: "Gentium",fontSize: 17
                                             ),
@@ -175,7 +175,7 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                         // Define the shape of the card
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(4),
-                          side: BorderSide(width: 1.0,color: Colors.white)
+                          side: const BorderSide(width: 1.0,color: Colors.white)
                         ),
                         // Define how the card's content should be clipped
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -197,8 +197,8 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                                         Container(height: 5),
                                         // Add a title widget
                                         Text(
-                                          "${makale.makale_ismi}",
-                                          style: TextStyle(
+                                          makale.makale_ismi,
+                                          style: const TextStyle(
                                               color: Colors.white,fontWeight: FontWeight.w300,
                                               fontFamily: "Gentium",fontSize: 22
                                           ),
@@ -207,7 +207,7 @@ class _MakalelerimizState extends State<Makalelerimiz> {
                                         Container(height: 5),
                                         // Add a subtitle widget
                                         Text(
-                                          "${makale.makale_aciklama}",
+                                          makale.makale_aciklama,
                                           style: TextStyle(
                                               color: Colors.grey[500],fontFamily: "Gentium",fontSize: 17
                                           ),
