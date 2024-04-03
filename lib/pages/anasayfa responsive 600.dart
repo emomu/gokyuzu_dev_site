@@ -96,12 +96,20 @@ class _Anasayfa600State extends State<Anasayfa600> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Uygul",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
-                                    Text("a",style: TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30),),
-                                    Text("malarımız",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
+                                    RichText(
+                                      text: const TextSpan(
+                                          text: "Uygul",
+                                          style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),
+                                          children: <TextSpan>[
+                                            TextSpan(text:"a",style:TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30)),
+                                            TextSpan(text:"malarımız",style:TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30)),
+                                          ]
+                                      ),
+
+                                    )
 
                                   ],
                                 ),
@@ -138,12 +146,20 @@ class _Anasayfa600State extends State<Anasayfa600> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Maka",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
-                                    Text("l",style: TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30),),
-                                    Text("elerimiz",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
+                                    RichText(
+                                      text: const TextSpan(
+                                          text: "Maka",
+                                          style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),
+                                          children: <TextSpan>[
+                                            TextSpan(text:"l",style:TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30)),
+                                            TextSpan(text:"elerimiz",style:TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30)),
+                                          ]
+                                      ),
+
+                                    )
                                   ],
                                 ),
                                 const SizedBox(
@@ -179,12 +195,20 @@ class _Anasayfa600State extends State<Anasayfa600> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("İl",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
-                                    Text("e",style: TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30),),
-                                    Text("tişim",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
+                                    RichText(
+                                      text: const TextSpan(
+                                          text: "İl",
+                                          style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),
+                                          children: <TextSpan>[
+                                            TextSpan(text:"e",style:TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30)),
+                                            TextSpan(text:"tişim",style:TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30)),
+                                          ]
+                                      ),
+
+                                    )
                                   ],
                                 ),
                                 const SizedBox(
@@ -224,12 +248,20 @@ class _Anasayfa600State extends State<Anasayfa600> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Uygul",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
-                                    Text("a",style: TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30),),
-                                    Text("malarımız",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
+                                    RichText(
+                                      text: const TextSpan(
+                                          text: "Uygul",
+                                          style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),
+                                          children: <TextSpan>[
+                                            TextSpan(text:"a",style:TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30)),
+                                            TextSpan(text:"malarımız",style:TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30)),
+                                          ]
+                                      ),
+
+                                    )
 
                                   ],
                                 ),
@@ -266,12 +298,20 @@ class _Anasayfa600State extends State<Anasayfa600> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Maka",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
-                                    Text("l",style: TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30),),
-                                    Text("elerimiz",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
+                                    RichText(
+                                      text: const TextSpan(
+                                          text: "Maka",
+                                          style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),
+                                          children: <TextSpan>[
+                                            TextSpan(text:"l",style:TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30)),
+                                            TextSpan(text:"elerimiz",style:TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30)),
+                                          ]
+                                      ),
+
+                                    )
                                   ],
                                 ),
                                 const SizedBox(
@@ -307,12 +347,20 @@ class _Anasayfa600State extends State<Anasayfa600> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("İl",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
-                                    Text("e",style: TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30),),
-                                    Text("tişim",style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),),
+                                    RichText(
+                                      text: const TextSpan(
+                                          text: "İl",
+                                          style: TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30),
+                                          children: <TextSpan>[
+                                            TextSpan(text:"e",style:TextStyle(color: Color(0xFFFF0000),fontFamily: "Gentium",fontSize: 30)),
+                                            TextSpan(text:"tişim",style:TextStyle(color: Colors.white,fontFamily: "Gentium",fontSize: 30)),
+                                          ]
+                                      ),
+
+                                    )
                                   ],
                                 ),
                                 const SizedBox(
