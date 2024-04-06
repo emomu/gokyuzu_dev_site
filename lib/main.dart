@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFF0000)),
         useMaterial3: false,
       ),
-      home:const MyHomePage(title: "Gokyuzu Development"),
+      home: MyHomePage(title: "Gokyuzu Development",),
     );
   }
 }
-

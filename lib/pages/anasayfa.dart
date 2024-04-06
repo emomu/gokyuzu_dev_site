@@ -3,6 +3,7 @@ import 'package:gokyuzudevsite/components/drawer.dart';
 import 'package:gokyuzudevsite/pages/anasayfa%20responsive%201800.dart';
 import 'package:gokyuzudevsite/pages/anasayfa%20responsive%20600.dart';
 import 'package:gokyuzudevsite/pages/makalelerimiz.dart';
+
 class Anasayfa extends StatefulWidget {
   const Anasayfa({super.key});
 
@@ -41,7 +42,7 @@ class _AnasayfaState extends State<Anasayfa> {
                 fixedSize: const Size(150,10),
               ),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const Makalelerimiz()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Makalelerimiz()));
               }, child:const Row(
                 children: [
                   Text("Makalelerimiz",style: TextStyle(fontFamily:"Gentium",fontSize:16)),
